@@ -62,7 +62,7 @@ namespace Bulky.DataAccess.Migrations
                         });
                 });
 
-            modelBuilder.Entity("BulkyModels.Product", b =>
+            modelBuilder.Entity("Bulky.Models.Product", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

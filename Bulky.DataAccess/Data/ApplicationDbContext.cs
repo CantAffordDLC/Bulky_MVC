@@ -1,5 +1,4 @@
 ﻿using Bulky.Models;
-using BulkyModels;
 using Microsoft.EntityFrameworkCore;
 
 namespace Bulky.DataAccess.Data

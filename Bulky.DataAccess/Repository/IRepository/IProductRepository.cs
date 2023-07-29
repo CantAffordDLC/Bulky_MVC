@@ -1,5 +1,4 @@
 ﻿using Bulky.Models;
-using BulkyModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;

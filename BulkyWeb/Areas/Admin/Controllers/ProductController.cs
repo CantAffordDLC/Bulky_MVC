@@ -2,7 +2,6 @@
 using Bulky.DataAccess.Data;
 using Microsoft.AspNetCore.Mvc;
 using Bulky.DataAccess.Repository.IRepository;
-using BulkyModels;
 
 namespace BulkyWeb.Areas.Admin.Controllers
 {
@@ -26,7 +25,7 @@ namespace BulkyWeb.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(BulkyModels.Product obj)
+        public IActionResult Create(Product obj)
         {
             if (ModelState.IsValid)
             {
