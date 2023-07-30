@@ -2,6 +2,7 @@
 using Bulky.DataAccess.Data;
 using Microsoft.AspNetCore.Mvc;
 using Bulky.DataAccess.Repository.IRepository;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace BulkyWeb.Areas.Admin.Controllers
 {
@@ -21,7 +22,13 @@ namespace BulkyWeb.Areas.Admin.Controllers
 
         public IActionResult Create()
         {
-            return View();
+			List<SelectListItem> CategoryList = _unitOfWork.Category.GetAll().Select(u => new SelectListItem
+			{
+				Text = u.Name,
+				Value = u.id.ToString(),
+			}).ToList();
+            ViewData["CategoryList"]= CategoryList;
+			return View();
         }
 
         [HttpPost]
