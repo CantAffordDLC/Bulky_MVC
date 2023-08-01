@@ -13,7 +13,7 @@ namespace Bulky.Models.ViewModels
 	{
 		public Product Product { get; set; }
 
-		//[ValidateNever]
+		[ValidateNever]
 		public List<SelectListItem> CategoryList { get; set; }
 	}
 }
